@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <style>
+      .rich {
+        color: gold;
+      }
+      .beauty {
+        color: red;
+      }
+      .dog {
+        color: blue;
+      }
+      .pig {
+        color: pink;
+      }
+      /* 并集选择器用逗号分隔 */
+      #meiyangyang,
+      .rich,
+      .beauty,
+      .dog,
+      .pig {
+        font-size: 30px;
+        background-color: aquamarine;
+        width: 200px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- h2 是块元素独占一行 -->
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2>破产王五（无样式）</h2>
+    <hr />
+    <p class="dog">小狗旺财</p>
+    <p class="pig">小猪佩奇</p>
+    <p id="meiyangyang">美羊羊</p>
+  </body>
+</html>

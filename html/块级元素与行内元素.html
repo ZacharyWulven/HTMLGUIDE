@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 块级元素 特点：独占一行 -->
+    <marquee>块级元素</marquee>
+    <marquee>块级元素</marquee>
+    <h1>块级元素</h1>
+    <h1>块级元素</h1>
+    <p>块级元素</p>
+    <p>块级元素</p>
+    <div>块级元素</div>
+    <div>块级元素</div>
+    <!-- 行内元素 特点：不独占一行 -->
+    <input type="text" />
+    <input type="text" />
+    <span>行内元素</span>
+    <span>行内元素</span>
+
+    <!-- 规则 1：块级元素中能写：行内元素、块级元素（几乎什么都能写） -->
+    <div>
+      <span>规则 1</span>
+      <input type="text" />
+      <div>规则 1</div>
+    </div>
+
+    <!-- 规则 2：行内元素中能写：行内元素，但不能写块级元素 -->
+    <span>
+      <span> 规则 2</span>
+      <input type="text" />
+      <span> 规则 2</span>
+    </span>
+
+    <!-- 特殊规则 1：h1~h6 不能互相嵌套 -->
+
+    <!-- 特殊规则 2：p 标签里不能再嵌套块级元素 -->
+  </body>
+</html>

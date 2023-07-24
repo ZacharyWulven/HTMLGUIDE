@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <style>
+      .rich {
+        color: gold;
+      }
+      .beauty {
+        color: red;
+      }
+      /* 交集选择器，p 标签 并且 class=beauty  */
+      /* 元素选择器必须在开头 比如 p */
+      /* 不会有多个元素选择器 */
+      /* 这种用的最多 */
+      p.beauty#wc {
+        color: rebeccapurple;
+      }
+
+      /* 也可两个类名，弄成一个交集选择器，但用的少 */
+      .rich.beauty {
+        color: orange;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2 class="rich">土豪张三</h2>
+    <h2 class="beauty">明星李四</h2>
+    <h2 class="rich beauty">土豪明星王五</h2>
+    <hr />
+    <!-- 也可这么写，p 标签 && class=beauty && id=wc 的 -->
+    <!-- 但一般不会加 id，因为知道 id 直接写 id 的样式就好了 -->
+    <!-- <p class="beauty" id="wc">小狗旺财</p> -->
+    <p class="beauty">小狗旺财</p>
+    <p class="beauty">小猪佩奇</p>
+  </body>
+</html>

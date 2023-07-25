@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 跳转锚点需要加 # -->
+    <!-- 跳转到 MKT 锚点 -->
+    <a href="#MKT">看 Merkle Tree</a>
+    <a href="#avt">看头像</a>
+
+    <p>我是选择器</p>
+    <img src="./sel.png" alt="选择器" />
+
+    <!-- 锚点的声明方式一：锚点 name 不能重复，重复的后写的会失效 -->
+    <a name="MKT"></a>
+    <p>我是 Merkle Tree</p>
+    <img src="path_img/Merkle.png" alt="Merkle Tree" />
+
+    <!-- 锚点的声明方式二：标签上用 id 属性；推荐使用这种方式-->
+    <p id="avt">我是 Avatar</p>
+    <img src="favicon.ico" alt="Avatar" />
+
+    <p>整体介绍结束了</p>
+    <!-- 回到顶部 -->
+    <a href="#">回到顶部</a>
+    <!-- 刷新页面 -->
+    <a href="">刷新页面</a>
+
+    <!-- 执行 js -->
+    <a href="javascript:alert(666);">点我弹框</a>
+  </body>
+</html>

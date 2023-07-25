@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      img {
+        width: 600px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 相对路径 -->
+    <div><img src="./sel.png" alt="选择器" /></div>
+    <div><img src="path_img/Merkle.png" alt="Merkle Tree" /></div>
+
+    <!-- 绝对路径：分两类，本地绝对路径、网络绝对路径-->
+
+    <!-- 本地绝对路径-->
+    <!-- 这么写可能导致 live server 使其无法显示 -->
+    <div><img src="/Users/zacharyah/Pictures/yin.jpeg" alt="yin" /></div>
+
+    <!-- 网络绝对路径-->
+    <!-- src 的 url 如果有防盗链，那么图片可能无法显示了 -->
+    <div>
+      <img
+        src="https://t7.baidu.com/it/u=2621658848,3952322712&fm=193&f=GIF"
+        alt="航拍"
+      />
+    </div>
+  </body>
+</html>
